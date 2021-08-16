@@ -2,17 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tile : MonoBehaviour
+public abstract class Tile : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    protected Vector2Int gridPosition;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Vector2Int GridPos{get { return GridPos; } }
+
 }
